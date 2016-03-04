@@ -12,6 +12,31 @@ class Player: Characters {
 
     private var _name = ""
     private var _inventory = [String]()
+    private var _lvl = 1
+    private var _currentXp = 0.0
+    private var _totalXp = 0.0
+    
+    
+    var totalXp: Double{
+        get{
+            return _totalXp
+        }
+        set{
+            _totalXp = newValue
+        }
+    }
+    
+    var currentXp: Double{
+        get{
+            return _currentXp
+        }
+        set{
+            _currentXp = newValue
+        }
+    }
+    var lvl: Int{
+        return _lvl
+    }
     
     var inventory: [String]{
         get{
@@ -36,4 +61,14 @@ class Player: Characters {
     func addToInventory(item:String){
         _inventory.append(item)
     }
+    
+    func gainXp(xp: Double){
+        _currentXp += xp
+        _totalXp += xp
+        if  ((Double(_lvl) * (Double(_lvl))) - _totalXp) <= 0 {
+            _lvl += 1
+            _currentXp = 0
+        }
+    }
+    
 }

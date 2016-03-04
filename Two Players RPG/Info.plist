@@ -35,5 +35,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>jiimager.ttf</string>
+		<string>mplantin.ttf</string>
+		<string>Minecraft.ttf</string>
+	</array>
 </dict>
 </plist>

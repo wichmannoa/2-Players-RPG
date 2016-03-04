@@ -14,6 +14,10 @@
 		276B87EE1C89274B00F0B1FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276B87EC1C89274B00F0B1FD /* LaunchScreen.storyboard */; };
 		276B87F61C89296300F0B1FD /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276B87F51C89296300F0B1FD /* Characters.swift */; };
 		276B87F81C89347300F0B1FD /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276B87F71C89347300F0B1FD /* Player.swift */; };
+		276B87FA1C89CF3900F0B1FD /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 276B87F91C89CF3900F0B1FD /* Minecraft.ttf */; };
+		276B87FC1C89D00900F0B1FD /* mplantin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 276B87FB1C89D00900F0B1FD /* mplantin.ttf */; };
+		276B87FE1C89D07500F0B1FD /* jiimager.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 276B87FD1C89D07500F0B1FD /* jiimager.ttf */; };
+		276B88001C89DF3E00F0B1FD /* tripplePunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 276B87FF1C89DF3E00F0B1FD /* tripplePunch.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		276B87EF1C89274B00F0B1FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		276B87F51C89296300F0B1FD /* Characters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Characters.swift; path = ../Characters.swift; sourceTree = "<group>"; };
 		276B87F71C89347300F0B1FD /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		276B87F91C89CF3900F0B1FD /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		276B87FB1C89D00900F0B1FD /* mplantin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mplantin.ttf; sourceTree = "<group>"; };
+		276B87FD1C89D07500F0B1FD /* jiimager.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = jiimager.ttf; sourceTree = "<group>"; };
+		276B87FF1C89DF3E00F0B1FD /* tripplePunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tripplePunch.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 		276B87E21C89274B00F0B1FD /* Two Players RPG */ = {
 			isa = PBXGroup;
 			children = (
+				276B87F91C89CF3900F0B1FD /* Minecraft.ttf */,
+				276B87FF1C89DF3E00F0B1FD /* tripplePunch.wav */,
 				276B87E31C89274B00F0B1FD /* AppDelegate.swift */,
 				276B87E51C89274B00F0B1FD /* ViewController.swift */,
 				276B87E71C89274B00F0B1FD /* Main.storyboard */,
@@ -66,6 +76,8 @@
 				276B87EC1C89274B00F0B1FD /* LaunchScreen.storyboard */,
 				276B87EF1C89274B00F0B1FD /* Info.plist */,
 				276B87F71C89347300F0B1FD /* Player.swift */,
+				276B87FB1C89D00900F0B1FD /* mplantin.ttf */,
+				276B87FD1C89D07500F0B1FD /* jiimager.ttf */,
 			);
 			path = "Two Players RPG";
 			sourceTree = "<group>";
@@ -129,8 +141,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276B87FE1C89D07500F0B1FD /* jiimager.ttf in Resources */,
 				276B87EE1C89274B00F0B1FD /* LaunchScreen.storyboard in Resources */,
+				276B88001C89DF3E00F0B1FD /* tripplePunch.wav in Resources */,
 				276B87EB1C89274B00F0B1FD /* Assets.xcassets in Resources */,
+				276B87FC1C89D00900F0B1FD /* mplantin.ttf in Resources */,
+				276B87FA1C89CF3900F0B1FD /* Minecraft.ttf in Resources */,
 				276B87E91C89274B00F0B1FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

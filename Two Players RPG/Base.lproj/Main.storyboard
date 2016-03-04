@@ -3,7 +3,22 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="jiimager.ttf">
+            <string>JI-Imager</string>
+            <string>JI-Imager</string>
+            <string>JI-Imager</string>
+            <string>JI-Imager</string>
+            <string>JI-Imager</string>
+            <string>JI-Imager</string>
+            <string>JI-Imager</string>
+            <string>JI-Imager</string>
+            <string>JI-Imager</string>
+            <string>JI-Imager</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -32,27 +47,258 @@
                                     <constraint firstAttribute="height" constant="64" id="2gx-Q7-ORF"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Current Lvl" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eG-gc-vLe" userLabel="Lbl Lvl P1">
+                                <rect key="frame" x="20" y="289" width="175" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="BXf-DD-oqW"/>
+                                    <constraint firstAttribute="height" constant="21" id="cwU-B0-ftc"/>
+                                    <constraint firstAttribute="height" constant="21" id="tiL-Ny-bhf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="JI-Imager" family="Lantern" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tiL-Ny-bhf"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5s-NM-2fx" userLabel="Lbl Name P1">
+                                <rect key="frame" x="20" y="231" width="180" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aV1-OT-xPR"/>
+                                    <constraint firstAttribute="width" constant="180" id="eT6-v5-TcI"/>
+                                    <constraint firstAttribute="height" constant="21" id="i0g-Sx-1at"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="JI-Imager" family="Lantern" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="i0g-Sx-1at"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Current XP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZk-tt-MfD" userLabel="Lbl Xp P1">
+                                <rect key="frame" x="20" y="318" width="175" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="G4O-5e-cDJ"/>
+                                    <constraint firstAttribute="width" constant="180" id="GLR-sX-oO1"/>
+                                    <constraint firstAttribute="height" constant="21" id="kss-zX-Igi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="JI-Imager" family="Lantern" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kss-zX-Igi"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current HP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzQ-Ps-e7I" userLabel="Lbl Hp P1">
+                                <rect key="frame" x="20" y="260" width="180" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="HGp-1D-tVz"/>
+                                    <constraint firstAttribute="height" constant="21" id="YSt-X1-Upm"/>
+                                    <constraint firstAttribute="height" constant="21" id="l9L-m0-Shw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="JI-Imager" family="Lantern" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YSt-X1-Upm"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8Y-Pu-Bbx" userLabel="Attack">
+                                <rect key="frame" x="194" y="260" width="212" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="BEY-QL-bff"/>
+                                    <constraint firstAttribute="width" constant="212" id="Jtg-yF-7cG"/>
+                                </constraints>
+                                <state key="normal" image="player1attackbtn"/>
+                                <connections>
+                                    <action selector="onGainExpTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8nZ-1j-q0c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current HP" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToN-ug-75C" userLabel="Lbl Hp P2">
+                                <rect key="frame" x="400" y="260" width="180" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="UsG-Qp-mkA"/>
+                                    <constraint firstAttribute="height" constant="21" id="WoA-BP-uZR"/>
+                                    <constraint firstAttribute="height" constant="21" id="XjO-XJ-6ex"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="JI-Imager" family="Lantern" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XjO-XJ-6ex"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Current XP" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHz-Nx-LMa" userLabel="Lbl Xp P2">
+                                <rect key="frame" x="442" y="318" width="138" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="EOE-mp-R9E"/>
+                                    <constraint firstAttribute="height" constant="21" id="qP8-Jq-tUa"/>
+                                    <constraint firstAttribute="width" constant="180" id="wNA-jn-giW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="JI-Imager" family="Lantern" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qP8-Jq-tUa"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSN-46-0uZ" userLabel="Lbl Name P2">
+                                <rect key="frame" x="400" y="231" width="180" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5ow-su-EVN"/>
+                                    <constraint firstAttribute="width" constant="180" id="MLj-fu-tZh"/>
+                                    <constraint firstAttribute="height" constant="21" id="ysY-Vy-qkw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="JI-Imager" family="Lantern" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5ow-su-EVN"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Lvl" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgY-Bc-zAf" userLabel="Lbl Lvl P2">
+                                <rect key="frame" x="400" y="289" width="180" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="4Ia-PK-55M"/>
+                                    <constraint firstAttribute="height" constant="21" id="Udu-Jd-Od0"/>
+                                    <constraint firstAttribute="height" constant="21" id="xdy-Sf-8ZT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="JI-Imager" family="Lantern" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Udu-Jd-Od0"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="RlT-7P-LEa">
+                                <rect key="frame" x="400" y="347" width="180" height="191"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Yi6-nE-HPe"/>
+                                    <constraint firstAttribute="height" constant="191" id="cg6-rc-Wvw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enemy" translatesAutoresizingMaskIntoConstraints="NO" id="rHS-oA-inS">
+                                <rect key="frame" x="20" y="347" width="180" height="191"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="191" id="tRt-HP-1K9"/>
+                                    <constraint firstAttribute="width" constant="180" id="xLf-Wa-gCN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOn-rO-bg0">
+                                <rect key="frame" x="215" y="287" width="169" height="21"/>
+                                <fontDescription key="fontDescription" name="JI-Imager" family="Lantern" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.86252987329999997" blue="0.14781556030000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Roll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHh-Q6-FBk">
+                                <rect key="frame" x="269" y="346" width="63" height="21"/>
+                                <fontDescription key="fontDescription" name="JI-Imager" family="Lantern" pointSize="25"/>
+                                <color key="textColor" red="0.91785037878787878" green="0.79392020745843939" blue="0.13285784265520312" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="jZk-tt-MfD" firstAttribute="top" secondItem="1eG-gc-vLe" secondAttribute="bottom" constant="8" id="1Dc-j2-krq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rHS-oA-inS" secondAttribute="bottom" constant="62" id="1Ju-pE-SkM"/>
+                            <constraint firstItem="RlT-7P-LEa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Hn-md-FxD"/>
+                            <constraint firstItem="rHS-oA-inS" firstAttribute="top" secondItem="X8Y-Pu-Bbx" secondAttribute="bottom" constant="9" id="40Z-EP-jmk"/>
+                            <constraint firstItem="ZHh-Q6-FBk" firstAttribute="top" secondItem="X8Y-Pu-Bbx" secondAttribute="bottom" constant="8" id="4Iv-LY-XTj"/>
+                            <constraint firstItem="ZHh-Q6-FBk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5hU-T5-7nv"/>
+                            <constraint firstItem="qzQ-Ps-e7I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7kl-XL-bVL"/>
+                            <constraint firstItem="a5s-NM-2fx" firstAttribute="top" secondItem="1eG-gc-vLe" secondAttribute="bottom" constant="8" id="8pZ-Yb-EGt"/>
                             <constraint firstItem="Zb1-qN-B3f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9Ew-tQ-zqm"/>
                             <constraint firstItem="jwC-0b-1l0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AEa-Rr-nmt"/>
+                            <constraint firstItem="X8Y-Pu-Bbx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="AJN-m2-mlD"/>
+                            <constraint firstItem="RlT-7P-LEa" firstAttribute="top" secondItem="jZk-tt-MfD" secondAttribute="bottom" constant="8" id="Bjh-Pf-nmv"/>
+                            <constraint firstItem="1eG-gc-vLe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="61" id="FCT-q6-chH"/>
                             <constraint firstItem="ywR-UR-sL7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="171" id="Hga-jm-Gbq"/>
+                            <constraint firstItem="SOn-rO-bg0" firstAttribute="centerX" secondItem="X8Y-Pu-Bbx" secondAttribute="centerX" id="KYo-tZ-GSW"/>
+                            <constraint firstItem="1eG-gc-vLe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kqv-W7-UoV"/>
+                            <constraint firstItem="1eG-gc-vLe" firstAttribute="top" secondItem="qzQ-Ps-e7I" secondAttribute="bottom" constant="8" id="Kwo-vq-m21"/>
+                            <constraint firstItem="a5s-NM-2fx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LIx-XR-Dyc"/>
+                            <constraint firstItem="X8Y-Pu-Bbx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LwP-em-Ul9"/>
+                            <constraint firstItem="qzQ-Ps-e7I" firstAttribute="top" secondItem="a5s-NM-2fx" secondAttribute="bottom" constant="8" id="M5D-Ky-Wme"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zb1-qN-B3f" secondAttribute="bottom" id="Prr-ch-uYG"/>
+                            <constraint firstItem="rHS-oA-inS" firstAttribute="top" secondItem="jZk-tt-MfD" secondAttribute="bottom" constant="8" symbolic="YES" id="RVV-Eb-qrt"/>
+                            <constraint firstItem="jZk-tt-MfD" firstAttribute="top" secondItem="a5s-NM-2fx" secondAttribute="bottom" constant="8" id="UQk-4e-QIc"/>
                             <constraint firstAttribute="trailing" secondItem="jwC-0b-1l0" secondAttribute="trailing" id="VPC-da-nXb"/>
+                            <constraint firstItem="SOn-rO-bg0" firstAttribute="centerY" secondItem="X8Y-Pu-Bbx" secondAttribute="centerY" id="WLu-PR-4Jk"/>
+                            <constraint firstItem="qzQ-Ps-e7I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wsr-Y8-NUC"/>
+                            <constraint firstItem="hSN-46-0uZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XWX-Ov-Wai"/>
+                            <constraint firstItem="lgY-Bc-zAf" firstAttribute="top" secondItem="ToN-ug-75C" secondAttribute="bottom" constant="8" id="ZCM-3c-gD0"/>
                             <constraint firstAttribute="trailing" secondItem="Zb1-qN-B3f" secondAttribute="trailing" id="asT-Kr-DKj"/>
+                            <constraint firstItem="ToN-ug-75C" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="d6J-bE-9eN"/>
+                            <constraint firstItem="1eG-gc-vLe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eZb-rb-tuZ"/>
+                            <constraint firstItem="ToN-ug-75C" firstAttribute="top" secondItem="hSN-46-0uZ" secondAttribute="bottom" constant="8" id="f4s-IH-GX7"/>
+                            <constraint firstItem="pHz-Nx-LMa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fj6-dZ-1Km"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jwC-0b-1l0" secondAttribute="bottom" id="hwL-mD-4Oq"/>
+                            <constraint firstItem="lgY-Bc-zAf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iZY-OX-sfQ"/>
+                            <constraint firstItem="RlT-7P-LEa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="juU-aO-XeW"/>
+                            <constraint firstItem="RlT-7P-LEa" firstAttribute="top" secondItem="pHz-Nx-LMa" secondAttribute="bottom" constant="8" id="lNG-sf-Kmq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RlT-7P-LEa" secondAttribute="bottom" constant="62" id="lYn-cc-cvd"/>
+                            <constraint firstItem="X8Y-Pu-Bbx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="m2f-xx-NnD"/>
+                            <constraint firstItem="jZk-tt-MfD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nH0-a6-Ne6"/>
                             <constraint firstItem="Zb1-qN-B3f" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nis-N3-XwZ"/>
+                            <constraint firstItem="1eG-gc-vLe" firstAttribute="top" secondItem="qzQ-Ps-e7I" secondAttribute="bottom" constant="8" id="obS-XJ-Bhh"/>
+                            <constraint firstItem="qzQ-Ps-e7I" firstAttribute="trailing" secondItem="jZk-tt-MfD" secondAttribute="trailing" id="pBR-Kc-xHv"/>
                             <constraint firstAttribute="bottom" secondItem="ywR-UR-sL7" secondAttribute="bottom" id="s8X-KF-dmy"/>
                             <constraint firstItem="jwC-0b-1l0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-205" id="sXC-hE-uPv"/>
+                            <constraint firstItem="jZk-tt-MfD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tlA-tf-kMY"/>
+                            <constraint firstItem="rHS-oA-inS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="unR-Af-2PG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RlT-7P-LEa" secondAttribute="bottom" constant="62" id="vuk-3n-ou3"/>
+                            <constraint firstItem="pHz-Nx-LMa" firstAttribute="top" secondItem="lgY-Bc-zAf" secondAttribute="bottom" constant="8" id="wte-gp-wFg"/>
+                            <constraint firstItem="a5s-NM-2fx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="z40-40-Vb2"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="8pZ-Yb-EGt"/>
+                                <exclude reference="LIx-XR-Dyc"/>
+                                <exclude reference="Wsr-Y8-NUC"/>
+                                <exclude reference="FCT-q6-chH"/>
+                                <exclude reference="Kqv-W7-UoV"/>
+                                <exclude reference="Kwo-vq-m21"/>
+                                <exclude reference="UQk-4e-QIc"/>
+                                <exclude reference="nH0-a6-Ne6"/>
+                                <exclude reference="AJN-m2-mlD"/>
+                                <exclude reference="m2f-xx-NnD"/>
+                                <exclude reference="2Hn-md-FxD"/>
+                                <exclude reference="Bjh-Pf-nmv"/>
                                 <exclude reference="AEa-Rr-nmt"/>
                                 <exclude reference="VPC-da-nXb"/>
+                                <exclude reference="vuk-3n-ou3"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="btnAttack" destination="X8Y-Pu-Bbx" id="Uj0-fA-lWf"/>
+                        <outlet property="lblHp" destination="qzQ-Ps-e7I" id="1FT-Wd-Tjr"/>
+                        <outlet property="lblHp2" destination="ToN-ug-75C" id="a2l-ds-EvL"/>
+                        <outlet property="lblLvl" destination="1eG-gc-vLe" id="p4E-VL-QRM"/>
+                        <outlet property="lblLvl2" destination="lgY-Bc-zAf" id="MFc-HU-Gu1"/>
+                        <outlet property="lblName" destination="a5s-NM-2fx" id="yLO-QJ-w9E"/>
+                        <outlet property="lblName2" destination="hSN-46-0uZ" id="fzB-PQ-Ud0"/>
+                        <outlet property="lblRoll" destination="ZHh-Q6-FBk" id="VMv-f7-1Wc"/>
+                        <outlet property="lblTurn" destination="SOn-rO-bg0" id="KKD-8N-xtI"/>
+                        <outlet property="lblXp" destination="jZk-tt-MfD" id="x4k-jM-fgg"/>
+                        <outlet property="lblXp2" destination="pHz-Nx-LMa" id="rON-OU-fBR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,6 +307,9 @@
     </scenes>
     <resources>
         <image name="bg" width="1024" height="677"/>
+        <image name="enemy" width="241" height="348"/>
         <image name="ground" width="1024" height="106"/>
+        <image name="player" width="406" height="441"/>
+        <image name="player1attackbtn" width="212" height="78"/>
     </resources>
 </document>
