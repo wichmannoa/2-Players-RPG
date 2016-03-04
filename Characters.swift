@@ -11,7 +11,6 @@ import Foundation
 class Characters {
     private var _hp = 0;
     private var _attackPower = 0;
-    private var _name = "";
     
     var attackPower: Int{
         get{
@@ -30,14 +29,6 @@ class Characters {
             _hp = newValue
         }
     }
-    var name: String{
-        get{
-            return _name
-        }
-        set{
-            _name = newValue
-        }
-    }
     
     var isAlive: Bool{
         get{
@@ -49,12 +40,17 @@ class Characters {
         }
     }
     
-    init(startingHp: Int, attackPwr: Int, name: String){
+    init(startingHp: Int, attackPwr: Int){
         self._hp = startingHp
         self._attackPower = attackPwr
-        self.name = name
+       
     }
     
+    
+    func attempAttack(attackPower: Int) -> Bool{
+        self._hp -= attackPower
+        return true;
+    }
  
     
 
