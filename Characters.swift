@@ -33,9 +33,9 @@ class Characters {
     var isAlive: Bool{
         get{
             if _hp <= 0 {
-                return true
-            }else{
                 return false
+            }else{
+                return true
             }
         }
     }
