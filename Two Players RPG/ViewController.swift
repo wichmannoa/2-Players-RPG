@@ -5,7 +5,11 @@
 //  Created by Otto on 3/3/16.
 //  Copyright © 2016 Otto. All rights reserved.
 //
-
+//TODO: Add intro screen. 
+// Add background 8bit music some examples in lesson 50
+// Add character selection screen.
+// Add Segue?
+// Create game class to clean up code.
 import UIKit
 import AVFoundation
 class ViewController: UIViewController {
